@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1584705869588_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=be-graphes-model/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=be-graphes-algos/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=be-graphes-gui/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=be-graphes-gui/src\/main\/resources=/maven.pomderived=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1584705869614_1" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=be-graphes-model/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=be-graphes-algos/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1584706496943_3" label="be-graphes-all" name="be-graphes-all">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/be-graphes-model" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/be-graphes-all" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/be-graphes-algos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/be-graphes-gui" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1584705871188_2" label="Window Working Set" name="Aggregate for window 1584705871188"/>
+</workingSetManager>
