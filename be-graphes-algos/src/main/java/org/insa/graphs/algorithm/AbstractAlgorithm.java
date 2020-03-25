@@ -1,5 +1,5 @@
 package org.insa.graphs.algorithm;
-/*Commentaire random important*/
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;

@@ -29,14 +29,24 @@ public class Path {
      * 
      * @throws IllegalArgumentException If the list of nodes is not valid, i.e. two
      *         consecutive nodes in the list are not connected in the graph.
-     * 
-     * @deprecated Need to be implemented.
      */
     public static Path createFastestPathFromNodes(Graph graph, List<Node> nodes)
             throws IllegalArgumentException {
-        List<Arc> arcs = new ArrayList<Arc>();
-        // TODO:
-        return new Path(graph, arcs);
+    	List<Arc> arcs = new ArrayList<Arc>();
+        Path path;
+        if (nodes.size()==1) path=new Path(graph, nodes.get(0));
+        else {
+        	for (int i=0; i<nodes.size()-1; i++) {
+        	Arc arcmin = null;
+        	for (Arc a:nodes.get(i).getSuccessors()) {
+        		if (a.getDestination().equals(nodes.get(i+1))&&(arcmin==null||a.getMinimumTravelTime()<arcmin.getMinimumTravelTime())) arcmin=a;
+        	}
+        	if (arcmin==null) throw new IllegalArgumentException();
+        	arcs.add(arcmin);
+        	}
+        	path=new Path(graph, arcs);
+        }
+        return path;
     }
 
     /**
@@ -50,14 +60,24 @@ public class Path {
      * 
      * @throws IllegalArgumentException If the list of nodes is not valid, i.e. two
      *         consecutive nodes in the list are not connected in the graph.
-     * 
-     * @deprecated Need to be implemented.
      */
     public static Path createShortestPathFromNodes(Graph graph, List<Node> nodes)
             throws IllegalArgumentException {
         List<Arc> arcs = new ArrayList<Arc>();
-        // TODO:
-        return new Path(graph, arcs);
+        Path path;
+        if (nodes.size()==1) path=new Path(graph, nodes.get(0));
+        else {
+        	for (int i=0; i<nodes.size()-1; i++) {
+        	Arc arcmin = null;
+        	for (Arc a:nodes.get(i).getSuccessors()) {
+        		if (a.getDestination().equals(nodes.get(i+1))&&(arcmin==null||a.getLength()<arcmin.getLength())) arcmin=a;
+        	}
+        	if (arcmin==null) throw new IllegalArgumentException();
+        	arcs.add(arcmin);
+        	}
+        	path=new Path(graph, arcs);
+        }
+        return path;
     }
 
     /**
@@ -197,12 +217,19 @@ public class Path {
      * </ul>
      * 
      * @return true if the path is valid, false otherwise.
-     * 
-     * @deprecated Need to be implemented.
      */
     public boolean isValid() {
-        // TODO:
-        return false;
+    	boolean valid=true;
+    	if (this.isEmpty()||(this.size()==1&&this.arcs.size()==0)) {}
+    	else {
+    		if (this.arcs.get(0).getOrigin()!=this.origin) valid=false;
+    		else {
+    			for (int i=0; i<arcs.size()-1; i++) {
+    				if (arcs.get(i).getDestination()!=arcs.get(i+1).getOrigin()) valid=false;
+    			}
+    		}
+    	}
+        return valid;
     }
 
     /**
@@ -210,11 +237,13 @@ public class Path {
      * 
      * @return Total length of the path (in meters).
      * 
-     * @deprecated Need to be implemented.
      */
     public float getLength() {
-        // TODO:
-        return 0;
+        float length=0;
+        for (Arc i:arcs) {
+        	length+=i.getLength();
+        }
+        return length;
     }
 
     /**
@@ -225,11 +254,13 @@ public class Path {
      * @return Time (in seconds) required to travel this path at the given speed (in
      *         kilometers-per-hour).
      * 
-     * @deprecated Need to be implemented.
      */
     public double getTravelTime(double speed) {
-        // TODO:
-        return 0;
+        double traveltime=0;
+        for (Arc i:arcs) {
+        	traveltime+=i.getLength()/speed*3.6;
+        }
+        return traveltime;
     }
 
     /**
@@ -237,12 +268,13 @@ public class Path {
      * on every arc.
      * 
      * @return Minimum travel time to travel this path (in seconds).
-     * 
-     * @deprecated Need to be implemented.
      */
     public double getMinimumTravelTime() {
-        // TODO:
-        return 0;
+    	double traveltime=0;
+        for (Arc i:arcs) {
+        	traveltime+=i.getMinimumTravelTime();
+        }
+        return traveltime;
     }
 
 }

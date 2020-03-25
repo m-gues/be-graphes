@@ -785,3 +785,107 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.an
 2020-03-20 13:29:36,297 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-03-20 13:29:36,298 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\test\resources
 2020-03-20 13:31:28,192 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-03-20 14:22:15,972 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-03-20 14:22:53,702 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:53,703 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-20 14:22:53,706 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:53,706 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-20 14:22:54,332 [Worker-8: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2020-03-20 14:22:54,341 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:54,342 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\main\resources
+2020-03-20 14:22:54,344 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:54,344 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\test\resources
+2020-03-20 14:22:55,558 [Worker-8: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2020-03-20 14:22:55,559 [Worker-8: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier  to /be-graphes-algos/target/classes
+2020-03-20 14:22:55,588 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:55,594 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-03-20 14:22:55,630 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:55,630 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-gui\src\test\resources
+2020-03-20 14:22:57,645 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:57,646 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\main\resources
+2020-03-20 14:22:57,648 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:22:57,648 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\test\resources
+2020-03-20 14:23:30,317 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:23:30,318 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\main\resources
+2020-03-20 14:23:30,321 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-20 14:23:30,321 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\test\resources
+2020-03-20 15:32:15,518 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-03-25 15:28:20,964 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-03-25 15:40:07,469 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:07,471 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 15:40:07,475 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:07,476 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 15:40:08,314 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2020-03-25 15:40:08,323 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:08,323 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\main\resources
+2020-03-25 15:40:08,325 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:08,325 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-algos\src\test\resources
+2020-03-25 15:40:08,376 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:08,396 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:08,412 [Worker-8: Launching BinaryHeapFormatter] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:09,837 [Worker-21: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier  to /be-graphes-model/target/classes
+2020-03-25 15:40:09,838 [Worker-21: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier  to /be-graphes-algos/target/classes
+2020-03-25 15:40:09,870 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:09,877 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2020-03-25 15:40:09,919 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 15:40:09,920 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-gui\src\test\resources
+2020-03-25 15:40:39,901 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:39,901 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 15:40:40,010 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:40,014 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 15:40:40,123 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:40:40,124 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 15:54:43,606 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:54:43,607 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 15:54:43,716 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:54:43,717 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 15:54:43,814 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-model: org.insa.graphs:be-graphes-model:0.0.1-SNAPSHOT with classifier null to /be-graphes-model/target/classes
+2020-03-25 15:54:43,814 [Worker-21: Launching MainWindow] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/be-graphes-algos: org.insa.graphs:be-graphes-algos:0.0.1-SNAPSHOT with classifier null to /be-graphes-algos/target/classes
+2020-03-25 16:01:47,847 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:01:47,848 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:01:47,849 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:01:47,850 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:10:09,665 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:10:09,665 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:10:09,668 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:10:09,668 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:11:54,024 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:11:54,025 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:11:54,027 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:11:54,028 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:24:19,611 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:24:19,613 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:24:19,618 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:24:19,620 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:24:25,828 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:24:25,828 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:24:25,831 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:24:25,831 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:26:32,219 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:26:32,220 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:26:32,224 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:26:32,224 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:33:04,962 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:33:04,962 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:33:04,963 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:33:04,964 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 16:33:15,470 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:33:15,471 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 16:33:15,476 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 16:33:15,477 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 17:02:49,659 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:02:49,659 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 17:02:49,661 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:02:49,661 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 17:06:42,618 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:06:42,620 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 17:06:42,624 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:06:42,625 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 17:20:33,661 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:20:33,663 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 17:20:33,666 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:20:33,667 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
+2020-03-25 17:23:15,020 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:23:15,020 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\main\resources
+2020-03-25 17:23:15,022 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-03-25 17:23:15,024 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marianne\Desktop\BE Graphes\be-graphes\be-graphes-model\src\test\resources
