@@ -4,6 +4,7 @@ import java.util.Arrays;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
 
+//demander pour l'insertion des sommets, comment faire pour que l'arbre binaire les classe par coûts ? Est-ce qu'on doit ?
 // Voir pour les fonctions en Notify() pour l'affichage dès qu'on a une version naïve
 
 public class DijkstraAlgorithm extends ShortestPathAlgorithm {
@@ -60,7 +61,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
         		}
         	}
         	labelI.setMarque(true);
-        	//Trouver le sommet de coût minimum, le mettre en nodeI et l'enlever avec remove()
+        	nodeI=tasTraitement.deleteMin(); //PROBABLEMENT FAUX, DEMANDER RAPPORT AU TAS ET A SON ORDRE
         }
         //Construction de la solution : voir Bellman-ford (/!\ Cas où pas de chemins !!!!)
         return solution;

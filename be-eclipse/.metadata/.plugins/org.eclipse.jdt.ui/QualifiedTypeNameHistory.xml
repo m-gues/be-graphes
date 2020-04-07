@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Node"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.model.Arc"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.model.Node"/>
+</qualifiedTypeNameHistroy>

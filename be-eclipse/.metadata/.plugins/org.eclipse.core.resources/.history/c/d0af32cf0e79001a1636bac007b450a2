@@ -1,0 +1,31 @@
+package org.insa.graphs.algorithm.shortestpath;
+
+import java.util.Arrays;
+
+public class DijkstraAlgorithm extends ShortestPathAlgorithm {
+	
+	private Label tabLabel[];
+
+    public DijkstraAlgorithm(ShortestPathData data) {
+        super(data);
+        tabLabel = new Label[data.getGraph().size()-1];
+    }
+
+    @Override
+    protected ShortestPathSolution doRun() {
+        final ShortestPathData data = getInputData();
+        ShortestPathSolution solution = null;
+        
+        // Initialisation du tableau d'étiquettes
+        tabLabel[0]=new Label(data.getGraph().getNodes().get(0),false, 0, null);
+        for (int i=1; i<tabLabel.length;i++) {
+        	tabLabel[i]=new Label(data.getGraph().getNodes().get(i),false, Double.POSITIVE_INFINITY, null);
+        }
+        
+        //Création et initialisation du tas
+        
+
+        return solution;
+    }
+
+}
