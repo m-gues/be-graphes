@@ -24,7 +24,6 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	@Override
 	protected ShortestPathSolution doRun() {
 		final ShortestPathData data = getInputData();
-		System.out.println(data.getMode());
 		ShortestPathSolution solution = null;
 		Node nodeI; //Variables temporaires de type Node, qui seront utilisées pour l'initialisation du tableau et pendant les itérations, afin d'éviter d'aller chercher une même node plusieurs fois
 		Arc arcIJ;  // Arc temporaire utilisé pendant les itérations
@@ -55,7 +54,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			for (int j=0; j<nodeI.getNumberOfSuccessors(); j++) {
 				arcIJ=nodeI.getSuccessors().get(j);
 				labelJ=tabLabel[data.getGraph().getNodes().indexOf(arcIJ.getDestination())];
-				if (data.isAllowed(arcIJ)&&!labelJ.getMarque()) {
+				if (!labelJ.getMarque()) {
 
 					nouvCout = labelI.getCout()+arcIJ.getLength();
 
@@ -74,15 +73,10 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			}
 			labelI.setMarque(true);
 			//Trouver le sommet de coût minimum, mettre sa node en NodeI et l'enlever du tas des labels en traitement avec remove()
-			if (tasTraitement.isEmpty()) {
-				break ; //Ce break est utilisé à titre exceptionnel uniquement : je ne veux pas capturer l'exception de file vide par risque de capturer le diagnostic d'une autre erreur de code.
-			}
-			else {
-				nodeI = tasTraitement.findMin().getSommetCourant();
-				labelI = tabLabel[data.getGraph().getNodes().indexOf(nodeI)];
-				tasTraitement.remove(labelI);
-				nbIterations++;
-			}
+			nodeI = tasTraitement.findMin().getSommetCourant();
+			labelI = tabLabel[data.getGraph().getNodes().indexOf(nodeI)];
+			tasTraitement.remove(labelI);
+			nbIterations++;
 		}
 		labelI.setMarque(true);
 				

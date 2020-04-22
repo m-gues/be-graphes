@@ -3,7 +3,7 @@ package org.insa.graphs.algorithm.shortestpath;
 import org.insa.graphs.model.Arc;
 import org.insa.graphs.model.Node;
 
-public class Label implements Comparable<Label>{
+public class Label {
 	
 	private Node sommetCourant;
 	private boolean marque;
@@ -26,7 +26,7 @@ public class Label implements Comparable<Label>{
 		return marque;
 	}
 	
-	public double getCout() {
+	public double getCost() {
 		return cout;
 	}
 	
@@ -50,22 +50,6 @@ public class Label implements Comparable<Label>{
 	public void setPere(Arc nouvPere) {
 		pere=nouvPere;
 	}
-	
-	@Override
-	public boolean equals(Object other) {
-        if (other == null) {
-            return false;
-        }
-        if (other instanceof Label) {
-            return this.sommetCourant ==((Label)other).getSommetCourant();
-        }
-        return false;
-    }
-	
-	@Override
-    public int compareTo(Label other) {
-        return Double.compare(cout, other.getCout());
-    }
 	
 
 }

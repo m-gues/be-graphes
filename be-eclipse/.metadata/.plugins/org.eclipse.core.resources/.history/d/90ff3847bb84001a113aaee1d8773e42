@@ -74,15 +74,10 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			}
 			labelI.setMarque(true);
 			//Trouver le sommet de coût minimum, mettre sa node en NodeI et l'enlever du tas des labels en traitement avec remove()
-			if (tasTraitement.isEmpty()) {
-				break ; //Ce break est utilisé à titre exceptionnel uniquement : je ne veux pas capturer l'exception de file vide par risque de capturer le diagnostic d'une autre erreur de code.
-			}
-			else {
-				nodeI = tasTraitement.findMin().getSommetCourant();
-				labelI = tabLabel[data.getGraph().getNodes().indexOf(nodeI)];
-				tasTraitement.remove(labelI);
-				nbIterations++;
-			}
+			nodeI = tasTraitement.findMin().getSommetCourant();
+			labelI = tabLabel[data.getGraph().getNodes().indexOf(nodeI)];
+			tasTraitement.remove(labelI);
+			nbIterations++;
 		}
 		labelI.setMarque(true);
 				
