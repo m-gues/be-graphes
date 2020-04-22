@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-import org.insa.graphs.algorithm.AbstractInputData.Mode;
 import org.insa.graphs.algorithm.AbstractSolution.Status;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
@@ -25,6 +24,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	@Override
 	protected ShortestPathSolution doRun() {
 		final ShortestPathData data = getInputData();
+		System.out.println(data.getMode());
 		ShortestPathSolution solution = null;
 		Node nodeI; //Variables temporaires de type Node, qui seront utilisées pour l'initialisation du tableau et pendant les itérations, afin d'éviter d'aller chercher une même node plusieurs fois
 		Arc arcIJ;  // Arc temporaire utilisé pendant les itérations
@@ -57,9 +57,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 				labelJ=tabLabel[data.getGraph().getNodes().indexOf(arcIJ.getDestination())];
 				if (data.isAllowed(arcIJ)&&!labelJ.getMarque()) {
 
-					//Si on cherche le shortest path
-					if (data.getMode()==Mode.LENGTH) nouvCout = labelI.getCout()+arcIJ.getLength();
-					else nouvCout = labelI.getCout()+arcIJ.getMinimumTravelTime();
+					nouvCout = labelI.getCout()+arcIJ.getLength();
 
 					//Insertion dans le tas des sommets en traitement si c'est la première maj du sommet
 					if (Double.isInfinite(labelJ.getCout()) && Double.isFinite(nouvCout)) {
@@ -76,6 +74,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			}
 			labelI.setMarque(true);
 			notifyNodeMarked(nodeI);
+			System.out.println(labelI.getCout());
 			//Trouver le sommet de coût minimum, mettre sa node en NodeI et l'enlever du tas des labels en traitement avec remove()
 			if (tasTraitement.isEmpty()) {
 				break ; //Ce break est utilisé à titre exceptionnel uniquement : je ne veux pas capturer l'exception de file vide par risque de capturer le diagnostic d'une autre erreur de code.
