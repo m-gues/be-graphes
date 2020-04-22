@@ -45,14 +45,13 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			else tabLabel[i]=new Label(nodeI, false, Double.POSITIVE_INFINITY, null);
 		}
 
-		System.out.println("/////////////////////////////////////////////////////////");
+
 		//Traitement de l'origine
 		nodeI=data.getOrigin();
 		labelI = tasTraitement.deleteMin();
 		notifyOriginProcessed(data.getOrigin());
 		//Itérations
 		while (nodeI!=data.getDestination()&&nbIterations<tabLabel.length) { //Note : tabLabel.length est égal au nombre de noeuds dans le graphe, on l'utilise car il est moins "difficile" à retrouver que la taille du graphe en lui-même
-			System.out.println("Nb successeurs : "+nodeI.getNumberOfSuccessors());
 			for (int j=0; j<nodeI.getNumberOfSuccessors(); j++) {
 				System.out.println(tasTraitement.size());
 				arcIJ=nodeI.getSuccessors().get(j);

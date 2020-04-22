@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Node"/>
     <fullyQualifiedTypeName name="org.insa.graphs.model.Arc"/>
     <fullyQualifiedTypeName name="org.insa.graphs.model.Node"/>
+    <fullyQualifiedTypeName name="org.insa.graphs.algorithm.AbstractInputData.Mode"/>
 </qualifiedTypeNameHistroy>
