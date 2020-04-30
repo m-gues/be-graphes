@@ -1,7 +1,6 @@
 package org.insa.graphs.algorithm.shortestpath;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 import org.insa.graphs.algorithm.AbstractInputData.Mode;
@@ -23,7 +22,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 
 
 	@Override
-	protected ShortestPathSolution doRun() {
+	public ShortestPathSolution doRun() {
 		final ShortestPathData data = getInputData();
 		ShortestPathSolution solution = null;
 		Node nodeI; //Variables temporaires de type Node, qui seront utilisées pour l'initialisation du tableau et pendant les itérations, afin d'éviter d'aller chercher une même node plusieurs fois
@@ -45,16 +44,13 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			else tabLabel[i]=new Label(nodeI, false, Double.POSITIVE_INFINITY, null);
 		}
 
-		System.out.println("/////////////////////////////////////////////////////////");
 		//Traitement de l'origine
 		nodeI=data.getOrigin();
 		labelI = tasTraitement.deleteMin();
 		notifyOriginProcessed(data.getOrigin());
 		//Itérations
-		while (nodeI!=data.getDestination()&&nbIterations<tabLabel.length) { //Note : tabLabel.length est égal au nombre de noeuds dans le graphe, on l'utilise car il est moins "difficile" à retrouver que la taille du graphe en lui-même
-			System.out.println("Nb successeurs : "+nodeI.getNumberOfSuccessors());
+		while (nodeI!=data.getDestination()&&nbIterations<tabLabel.length) { //Note : tabLabel.length est égal au nombre de noeuds dans le graphe, on l'utilise car il est moins "difficile" à retrouver que la taille du graphe en lui-même)
 			for (int j=0; j<nodeI.getNumberOfSuccessors(); j++) {
-				System.out.println(tasTraitement.size());
 				arcIJ=nodeI.getSuccessors().get(j);
 				labelJ=tabLabel[data.getGraph().getNodes().indexOf(arcIJ.getDestination())];
 				if (data.isAllowed(arcIJ)&&!labelJ.getMarque()) {
@@ -94,7 +90,8 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 		
 		//Construction de la solution
 		if (!tabLabel[data.getGraph().getNodes().indexOf(data.getDestination())].getMarque()) {
-			solution = new ShortestPathSolution(data, Status.INFEASIBLE);
+			nodeI = null;
+			solution = new ShortestPathSolution(data, Status.INFEASIBLE, new Path(data.getGraph(), nodeI));
 		}
 		else {
 
