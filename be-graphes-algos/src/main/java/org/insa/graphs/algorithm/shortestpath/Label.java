@@ -51,20 +51,24 @@ public class Label implements Comparable<Label>{
 		pere=nouvPere;
 	}
 	
+	public double getTotalCost() {
+		return this.cout;
+	}
+	
 	@Override
 	public boolean equals(Object other) {
         if (other == null) {
             return false;
         }
         if (other instanceof Label) {
-            return this.sommetCourant ==((Label)other).getSommetCourant();
+            return this.getTotalCost() ==((Label)other).getTotalCost();
         }
         return false;
     }
 	
 	@Override
     public int compareTo(Label other) {
-        return Double.compare(cout, other.getCout());
+        return Double.compare(this.getTotalCost(), other.getTotalCost());
     }
 	
 
