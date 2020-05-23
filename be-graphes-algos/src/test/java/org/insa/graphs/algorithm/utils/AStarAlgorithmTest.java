@@ -1,7 +1,5 @@
 package org.insa.graphs.algorithm.utils;
 
-import static org.junit.Assert.assertTrue;
-
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
@@ -14,7 +12,6 @@ import org.insa.graphs.model.Graph;
 import org.insa.graphs.model.io.BinaryGraphReader;
 import org.insa.graphs.model.io.GraphReader;
 import org.junit.BeforeClass;
-import org.junit.Test;
 
 public class AStarAlgorithmTest extends DijkstraAlgorithmTest{
 	
@@ -90,10 +87,5 @@ public class AStarAlgorithmTest extends DijkstraAlgorithmTest{
     standard_carre_t = new AStarAlgorithm(standard_carreData_t);
     impossible_t = new AStarAlgorithm(impossibleData_t);
     standard_t = new AStarAlgorithm(standard_hg_Data_t);   
-	}
-	
-	@Test
-	public void ptittestleu() {
-		assertTrue(longueurNulle_d instanceof AStarAlgorithm);
 	}
 }

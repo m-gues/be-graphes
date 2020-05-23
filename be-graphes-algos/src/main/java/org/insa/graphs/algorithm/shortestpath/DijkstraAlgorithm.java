@@ -8,6 +8,8 @@ import org.insa.graphs.algorithm.AbstractSolution.Status;
 import org.insa.graphs.algorithm.utils.*;
 import org.insa.graphs.model.*;
 
+import java.util.concurrent.*;
+
 public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 
 	//Tableau contenant les étiquettes des noeuds
@@ -31,6 +33,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 
 	@Override
 	protected ShortestPathSolution doRun() {
+		long lStartTime = System.nanoTime();
 		final ShortestPathData data = getInputData();
 		ShortestPathSolution solution = null;
 		Node nodeI; //Variables temporaires de type Node, qui seront utilisées pour l'initialisation du tableau et pendant les itérations, afin d'éviter d'aller chercher une même node plusieurs fois
@@ -85,6 +88,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 						labelJ.setPere(arcIJ);
 						tasTraitement.insert(labelJ);
 					}
+
 				}
 			}
 			nbIterations++;
@@ -114,8 +118,12 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 			Collections.reverse(arcs);
 
 			// Create the final solution.
-			solution = new ShortestPathSolution(data, Status.OPTIMAL, new Path(data.getGraph(), arcs));
+			if (arcs.isEmpty()) solution = new ShortestPathSolution(data, Status.OPTIMAL, new Path(data.getGraph(), data.getOrigin()));
+			else solution = new ShortestPathSolution(data, Status.OPTIMAL, new Path(data.getGraph(), arcs));
 		}
+		long lEndTime = System.nanoTime();
+		System.out.println("Temps de calcul (ms) : "+(lEndTime-lStartTime)/1000000);
+		
 		return solution;
 	}
 }

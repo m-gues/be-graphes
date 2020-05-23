@@ -5,7 +5,6 @@ import org.insa.graphs.model.Node;
 
 public class AStarAlgorithm extends DijkstraAlgorithm {
 	
-	//Demander pour la deuxième méthode + si le coût des label doit tjr ê croissant
 
     public AStarAlgorithm(ShortestPathData data) {
         super(data);
@@ -14,18 +13,24 @@ public class AStarAlgorithm extends DijkstraAlgorithm {
         double coutD; //Cout pour aller à la destination
         for (int i=0; i<tabLabel.length;i++) {
 			nodeI=data.getGraph().getNodes().get(i);
+			double coutMethode1, coutMethode2;
 			
 			//Si on cherche le shortest path
 			if (data.getMode()==Mode.LENGTH) coutD = nodeI.getPoint().distanceTo(data.getDestination().getPoint());
 			//Si on cherche le fastest path
 			else {
 				if (data.getGraph().getGraphInformation().hasMaximumSpeed()) {
-					/*if () coutD =;
-					else*/ coutD=1/(data.getGraph().getGraphInformation().getMaximumSpeed()/nodeI.getPoint().distanceTo(data.getDestination().getPoint())/3.6);
+					if (data.getMaximumSpeed()!=-1) {
+						if((coutMethode1=nodeI.getPoint().distanceTo(data.getDestination().getPoint())*3.6/data.getGraph().getGraphInformation().getMaximumSpeed())<(coutMethode2=nodeI.getPoint().distanceTo(data.getDestination().getPoint())*3.6/130)) {
+							coutD=coutMethode1;
+						}
+						else coutD=coutMethode2;						
+					}
+					else coutD=nodeI.getPoint().distanceTo(data.getDestination().getPoint())*3.6/data.getGraph().getGraphInformation().getMaximumSpeed();
 				}
 				else {
-					/*if () coutD=;
-					else*/ coutD=1/(130/nodeI.getPoint().distanceTo(data.getDestination().getPoint())/3.6);
+					if (data.getMaximumSpeed()!=-1) coutD=nodeI.getPoint().distanceTo(data.getDestination().getPoint())*3.6/data.getMaximumSpeed();
+					else coutD=nodeI.getPoint().distanceTo(data.getDestination().getPoint())*3.6/130;
 				}
 				
 			}

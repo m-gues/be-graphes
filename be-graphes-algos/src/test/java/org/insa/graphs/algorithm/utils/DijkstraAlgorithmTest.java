@@ -108,7 +108,7 @@ public class DijkstraAlgorithmTest{
 		//Plus court chemin, toutes routes
 		assertTrue(longueurNulle_d.run().getPath().isValid());
 		assertTrue(standard_carre_d.run().getPath().isValid());
-		assertTrue(impossible_d.run().getPath().isValid()); //Au premier essai erreur ici : doRun() renvoyait null si jamais la solution était introuvable, ce qui est incohérent avec le reste des classes. On a par conséquent modifié doRun() afin qu'il renvoie un path vide si aucune solution n'est trouvée
+		assertTrue(impossible_d.run().getPath().isValid()); 
 		assertTrue(standard_d.run().getPath().isValid());
 		
 		//Plus court chemin, voitures autorisées
@@ -138,7 +138,7 @@ public class DijkstraAlgorithmTest{
 	}
 	
 	//Note : on ne teste pas la taille ni l'optimalité de la solution vide et de celle de longueur nulle, celles-ci ont leurs propres tests plus précis
-	//@Test
+	@Test
 	public void testLongueurSolution() {
 		//Plus court chemin, toutes routes
 		testLongueurSolution(standard_carre_d);
@@ -163,8 +163,11 @@ public class DijkstraAlgorithmTest{
 	@Test
 	public void testSolutionLongueurNulle() {
 		assertEquals(longueurNulle_d.run().getPath().getLength(), 0, 0);
+		assertEquals(longueurNulle_d.run().getPath().getOrigin(), longueurNulle_d.getInputData().getOrigin());
 		assertEquals(longueurNulle_vd.run().getPath().getLength(), 0, 0);
+		assertEquals(longueurNulle_vd.run().getPath().getOrigin(), longueurNulle_vd.getInputData().getOrigin());
 		assertEquals(longueurNulle_t.run().getPath().getLength(), 0, 0);
+		assertEquals(longueurNulle_t.run().getPath().getOrigin(), longueurNulle_t.getInputData().getOrigin());
 	}
 	
 	public void testOptimaliteBellmanFord(DijkstraAlgorithm D) {
