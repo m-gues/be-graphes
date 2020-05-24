@@ -79,20 +79,22 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 					//Si on cherche le fastest path
 					else nouvCout = labelI.getCout()+arcIJ.getMinimumTravelTime();
 
-					//Insertion dans le tas des sommets en traitement si c'est la première maj du sommet
-					if (Double.isInfinite(labelJ.getCout()) && Double.isFinite(nouvCout)) {
-						tasTraitement.insert(labelJ);
-						notifyNodeReached(arcIJ.getDestination());
-					}
-
 					//Mise à jour du sommet (et du tas) si nécéssaire
 					if (nouvCout<labelJ.getCout()) {
-						tasTraitement.remove(labelJ);
-						labelJ.setCout(nouvCout);
-						labelJ.setPere(arcIJ);
-						tasTraitement.insert(labelJ);
+						//Insertion dans le tas des sommets en traitement si c'est la première maj du sommet
+						if (Double.isInfinite(labelJ.getCout()) && Double.isFinite(nouvCout)) {
+							labelJ.setCout(nouvCout);
+							labelJ.setPere(arcIJ);
+							tasTraitement.insert(labelJ);
+							notifyNodeReached(arcIJ.getDestination());
+						}
+						else {
+							tasTraitement.remove(labelJ);
+							labelJ.setCout(nouvCout);
+							labelJ.setPere(arcIJ);
+							tasTraitement.insert(labelJ);
+						}
 					}
-
 				}
 			}
 			nbIterations++;

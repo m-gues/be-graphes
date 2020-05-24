@@ -61,7 +61,7 @@ public class Label implements Comparable<Label>{
             return false;
         }
         if (other instanceof Label) {
-            return this.getTotalCost() ==((Label)other).getTotalCost();
+            return this.getSommetCourant() ==((Label)other).getSommetCourant();
         }
         return false;
     }
