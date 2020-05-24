@@ -8,7 +8,11 @@ public class AStarAlgorithm extends DijkstraAlgorithm {
 
     public AStarAlgorithm(ShortestPathData data) {
         super(data);
-        
+    }
+    
+    @Override
+   protected void initTabLabel() {
+    	final ShortestPathData data = getInputData();
         Node nodeI;
         double coutD; //Cout pour aller à la destination
         for (int i=0; i<tabLabel.length;i++) {
@@ -40,6 +44,7 @@ public class AStarAlgorithm extends DijkstraAlgorithm {
 			}
 			else tabLabel[i]=new LabelStar(nodeI, false, Double.POSITIVE_INFINITY, null, coutD);
 		}
-    }
+	   
+   }
 
 }

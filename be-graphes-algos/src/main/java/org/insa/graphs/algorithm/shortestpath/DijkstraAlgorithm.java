@@ -18,9 +18,12 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 	public DijkstraAlgorithm(ShortestPathData data) {
 		super(data);
 		tabLabel = new Label[data.getGraph().size()];
-
+	}
+	
+	protected void initTabLabel() {
 		// Initialisation du tableau d'étiquettes
 		Node nodeI;
+		final ShortestPathData data = getInputData();
 		for (int i=0; i<tabLabel.length;i++) {
 			nodeI=data.getGraph().getNodes().get(i);
 			if (nodeI==data.getOrigin()) {
@@ -33,6 +36,7 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 
 	@Override
 	protected ShortestPathSolution doRun() {
+		initTabLabel();
 		long lStartTime = System.nanoTime();
 		final ShortestPathData data = getInputData();
 		ShortestPathSolution solution = null;

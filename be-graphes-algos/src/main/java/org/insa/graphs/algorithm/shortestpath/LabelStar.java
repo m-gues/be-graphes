@@ -12,7 +12,7 @@ public class LabelStar extends Label{
 		coutPourDestination = coutD;
 	}
 	
-	//Mutateur
+	//Accesseur
 	public double getCoutPourDestination() {
 		return this.coutPourDestination;
 	}
