@@ -36,8 +36,8 @@ public class DijkstraAlgorithm extends ShortestPathAlgorithm {
 
 	@Override
 	protected ShortestPathSolution doRun() {
-		initTabLabel();
 		long lStartTime = System.nanoTime();
+		initTabLabel();
 		final ShortestPathData data = getInputData();
 		ShortestPathSolution solution = null;
 		Node nodeI; //Variables temporaires de type Node, qui seront utilisées pour l'initialisation du tableau et pendant les itérations, afin d'éviter d'aller chercher une même node plusieurs fois
